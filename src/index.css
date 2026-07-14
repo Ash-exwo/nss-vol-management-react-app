@@ -1,386 +1,404 @@
 /* ===============================
-   Volunteer Registration Theme
+   Volunteer Page
 ================================ */
 
-
 .volunteer-page {
-
-  min-height:100vh;
+  min-height: 100vh;
 
   background:
-  linear-gradient(
-      135deg,
-      #f4f8f4,
-      #fff8ed
-  );
+      linear-gradient(
+          135deg,
+          #f4f8f4,
+          #fff8ed
+      );
 
-  padding-top:20px;
-
+  padding-top: 0;
 }
 
 
-
-/* Main Card */
+/* ===============================
+ Main Card
+================================ */
 
 .volunteer-card {
+  background: #ffffff;
 
+  border-radius: 28px;
 
-  background:#ffffff;
-
-
-  border-radius:28px;
-
-
-  padding:45px;
-
+  padding: 45px;
 
   box-shadow:
+      0 15px 45px rgba(0, 0, 0, 0.12);
 
-  0 15px 45px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 
+  transition: 0.3s;
+}
 
-  border:1px solid rgba(255,255,255,0.7);
-
-
-  transition:0.3s;
-
-
+.volunteer-card:hover {
+  transform: translateY(-3px);
 }
 
 
-
-.volunteer-card:hover{
-
-  transform:translateY(-3px);
-
-}
-
-
-
-/* Heading */
-
+/* ===============================
+ Heading
+================================ */
 
 .volunteer-title {
+  color: #174A3A;
 
+  font-size: 32px;
 
-  color:#174A3A;
+  font-weight: 800;
 
+  letter-spacing: 3px;
+}
 
-  font-size:32px;
+.volunteer-subtitle {
+  color: #8A6A3D;
 
-
-  font-weight:800;
-
-
-  letter-spacing:3px;
-
-
+  font-size: 15px;
 }
 
 
+/* ===============================
+ Labels
+================================ */
 
-.volunteer-subtitle{
+.volunteer-card .form-label {
+  color: #23483A;
 
+  font-size: 15px;
 
-  color:#8A6A3D;
-
-
-  font-size:15px;
-
-
+  margin-bottom: 8px;
 }
 
 
-
-/* Labels */
-
-
-.volunteer-card .form-label{
-
-
-  color:#23483A;
-
-
-  font-size:15px;
-
-
-  margin-bottom:8px;
-
-
-}
-
-
-
-/* Input Design */
-
+/* ===============================
+ Input Design
+================================ */
 
 .volunteer-card .form-control,
 .volunteer-card select {
+  height: 48px;
 
+  border-radius: 14px;
 
-  height:48px;
+  border: 1px solid #ddd6c8;
 
+  padding-left: 18px;
 
-  border-radius:14px;
+  font-size: 14px;
 
+  background: #fcfcfc;
 
-  border:1px solid #ddd6c8;
-
-
-  padding-left:18px;
-
-
-  font-size:14px;
-
-
-  background:#fcfcfc;
-
-
-  transition:all .3s ease;
-
-
+  transition: all 0.3s ease;
 }
 
+.volunteer-card textarea.form-control {
+  height: auto;
 
-
-.volunteer-card textarea.form-control{
-
-
-  height:auto;
-
-
-  padding-top:15px;
-
-
+  padding-top: 15px;
 }
 
-
-
-
-.volunteer-card .form-control:hover{
-
-
-  border-color:#b79a62;
-
-
+.volunteer-card .form-control:hover {
+  border-color: #b79a62;
 }
-
-
-
 
 .volunteer-card .form-control:focus,
-.volunteer-card select:focus{
+.volunteer-card select:focus {
+  background: #ffffff;
 
-
-  background:#ffffff;
-
-
-  border-color:#B48A45;
-
+  border-color: #B48A45;
 
   box-shadow:
-
-  0 0 0 0.25rem rgba(180,138,69,.20);
-
-
+      0 0 0 0.25rem rgba(180, 138, 69, 0.20);
 }
 
 
+/* ===============================
+ Placeholder
+================================ */
 
-/* Placeholder */
+.volunteer-card ::placeholder {
+  color: #aaa;
 
-
-.volunteer-card ::placeholder{
-
-
-  color:#aaa;
-
-
-  font-size:13px;
-
-
+  font-size: 13px;
 }
 
 
+/* ===============================
+ Button
+================================ */
 
-/* Button */
-
-
-.volunteer-submit-btn{
-
-
+.volunteer-submit-btn {
   background:
+      linear-gradient(
+          135deg,
+          #174A3A,
+          #28634D
+      );
 
-  linear-gradient(
-      135deg,
-      #174A3A,
-      #28634D
-  );
+  color: white;
 
+  border: none;
 
-  color:white;
+  padding: 15px 55px;
 
+  border-radius: 50px;
 
-  border:none;
+  font-size: 15px;
 
+  font-weight: 700;
 
-  padding:15px 55px;
+  letter-spacing: 1.2px;
 
-
-  border-radius:50px;
-
-
-  font-size:15px;
-
-
-  font-weight:700;
-
-
-  letter-spacing:1.2px;
-
-
-  transition:.3s;
-
-
+  transition: 0.3s;
 }
 
-
-
-.volunteer-submit-btn:hover{
-
-
+.volunteer-submit-btn:hover {
   background:
+      linear-gradient(
+          135deg,
+          #28634D,
+          #174A3A
+      );
 
-  linear-gradient(
-      135deg,
-      #28634D,
-      #174A3A
-  );
+  color: white;
 
-
-  transform:translateY(-4px);
-
+  transform: translateY(-4px);
 
   box-shadow:
-
-  0 12px 25px rgba(23,74,58,.35);
-
-
+      0 12px 25px rgba(23, 74, 58, 0.35);
 }
 
 
-
-/* Mobile */
-
-
-@media(max-width:768px){
-
-
-  .volunteer-card{
-
-
-      padding:25px;
-
-
-      border-radius:20px;
-
-
-  }
-
-
-
-  .volunteer-title{
-
-
-      font-size:24px;
-
-
-  }
-
-
-}
-
-/* Volunteer Table Styling */
-
+/* ===============================
+ Volunteer Table Styling
+================================ */
 
 .volunteer-card table {
-
-  margin-top:20px;
-
+  margin-top: 20px;
 }
-
-
 
 .volunteer-card thead {
+  background: #174A3A;
 
-
-  background:#174A3A;
-
-  color:white;
-
-
+  color: white;
 }
-
-
 
 .volunteer-card th {
+  padding: 15px;
 
+  font-size: 14px;
 
-  padding:15px;
-
-  font-size:14px;
-
-  letter-spacing:.5px;
-
-
+  letter-spacing: 0.5px;
 }
-
-
 
 .volunteer-card td {
+  padding: 14px;
 
+  color: #39483f;
 
-  padding:14px;
-
-  color:#39483f;
-
-  font-size:14px;
-
-
+  font-size: 14px;
 }
-
-
 
 .volunteer-card tbody tr {
-
-
-  transition:.3s;
-
-
+  transition: 0.3s;
 }
-
-
 
 .volunteer-card tbody tr:hover {
+  background: #f5f8f2;
 
+  transform: scale(1.005);
+}
 
-  background:#f5f8f2;
+.badge {
+  padding: 8px 12px;
 
+  border-radius: 20px;
 
-  transform:scale(1.005);
-
-
+  font-size: 12px;
 }
 
 
+/* ===============================
+ Volunteer Navbar
+================================ */
 
-.badge {
+.volunteer-navbar {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+
+  background:
+      linear-gradient(
+          135deg,
+          #174A3A,
+          #245F49
+      );
+
+  padding: 14px 0;
+
+  border-bottom:
+      1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+      0 4px 20px rgba(23, 74, 58, 0.18);
+}
 
 
-  padding:8px 12px;
+/* Navbar Brand */
 
-  border-radius:20px;
+.volunteer-brand {
+  color: #ffffff !important;
 
-  font-size:12px;
+  font-size: 21px;
 
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.volunteer-brand:hover {
+  color: #F2D7A0 !important;
+}
+
+
+/* Navbar Links */
+
+.volunteer-nav-link {
+  position: relative;
+
+  color:
+      rgba(255, 255, 255, 0.9) !important;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  padding:
+      10px 18px !important;
+
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.volunteer-nav-link:hover {
+  color: #F2D7A0 !important;
+
+  background:
+      rgba(255, 255, 255, 0.08);
+
+  transform: translateY(-1px);
+}
+
+
+/* Navbar Link Underline */
+
+.volunteer-nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 4px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #F2D7A0;
+
+  border-radius: 10px;
+
+  transform:
+      translateX(-50%);
+
+  transition:
+      width 0.3s ease;
+}
+
+.volunteer-nav-link:hover::after {
+  width: 55%;
+}
+
+
+/* ===============================
+ Navbar Toggle Button
+================================ */
+
+.volunteer-navbar .navbar-toggler {
+  border:
+      1px solid
+      rgba(255, 255, 255, 0.35) !important;
+
+  padding: 7px 10px;
+
+  border-radius: 8px;
+}
+
+.volunteer-navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.volunteer-navbar .navbar-toggler-icon {
+  filter:
+      brightness(0)
+      invert(1);
+}
+
+
+/* ===============================
+ Responsive Design
+================================ */
+
+@media (max-width: 991px) {
+
+  .volunteer-navbar .navbar-nav {
+      margin-top: 18px;
+
+      padding: 12px 0;
+  }
+
+  .volunteer-nav-link {
+      margin-bottom: 6px;
+
+      padding:
+          11px 14px !important;
+  }
+
+  .volunteer-nav-link::after {
+      display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .volunteer-card {
+      padding: 25px;
+
+      border-radius: 20px;
+  }
+
+  .volunteer-title {
+      font-size: 24px;
+  }
+
+  .volunteer-submit-btn {
+      width: 100%;
+
+      padding: 14px 25px;
+  }
 }
