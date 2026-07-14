@@ -1,0 +1,386 @@
+/* ===============================
+   Volunteer Registration Theme
+================================ */
+
+
+.volunteer-page {
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+      135deg,
+      #f4f8f4,
+      #fff8ed
+  );
+
+  padding-top:20px;
+
+}
+
+
+
+/* Main Card */
+
+.volunteer-card {
+
+
+  background:#ffffff;
+
+
+  border-radius:28px;
+
+
+  padding:45px;
+
+
+  box-shadow:
+
+  0 15px 45px rgba(0,0,0,0.12);
+
+
+  border:1px solid rgba(255,255,255,0.7);
+
+
+  transition:0.3s;
+
+
+}
+
+
+
+.volunteer-card:hover{
+
+  transform:translateY(-3px);
+
+}
+
+
+
+/* Heading */
+
+
+.volunteer-title {
+
+
+  color:#174A3A;
+
+
+  font-size:32px;
+
+
+  font-weight:800;
+
+
+  letter-spacing:3px;
+
+
+}
+
+
+
+.volunteer-subtitle{
+
+
+  color:#8A6A3D;
+
+
+  font-size:15px;
+
+
+}
+
+
+
+/* Labels */
+
+
+.volunteer-card .form-label{
+
+
+  color:#23483A;
+
+
+  font-size:15px;
+
+
+  margin-bottom:8px;
+
+
+}
+
+
+
+/* Input Design */
+
+
+.volunteer-card .form-control,
+.volunteer-card select {
+
+
+  height:48px;
+
+
+  border-radius:14px;
+
+
+  border:1px solid #ddd6c8;
+
+
+  padding-left:18px;
+
+
+  font-size:14px;
+
+
+  background:#fcfcfc;
+
+
+  transition:all .3s ease;
+
+
+}
+
+
+
+.volunteer-card textarea.form-control{
+
+
+  height:auto;
+
+
+  padding-top:15px;
+
+
+}
+
+
+
+
+.volunteer-card .form-control:hover{
+
+
+  border-color:#b79a62;
+
+
+}
+
+
+
+
+.volunteer-card .form-control:focus,
+.volunteer-card select:focus{
+
+
+  background:#ffffff;
+
+
+  border-color:#B48A45;
+
+
+  box-shadow:
+
+  0 0 0 0.25rem rgba(180,138,69,.20);
+
+
+}
+
+
+
+/* Placeholder */
+
+
+.volunteer-card ::placeholder{
+
+
+  color:#aaa;
+
+
+  font-size:13px;
+
+
+}
+
+
+
+/* Button */
+
+
+.volunteer-submit-btn{
+
+
+  background:
+
+  linear-gradient(
+      135deg,
+      #174A3A,
+      #28634D
+  );
+
+
+  color:white;
+
+
+  border:none;
+
+
+  padding:15px 55px;
+
+
+  border-radius:50px;
+
+
+  font-size:15px;
+
+
+  font-weight:700;
+
+
+  letter-spacing:1.2px;
+
+
+  transition:.3s;
+
+
+}
+
+
+
+.volunteer-submit-btn:hover{
+
+
+  background:
+
+  linear-gradient(
+      135deg,
+      #28634D,
+      #174A3A
+  );
+
+
+  transform:translateY(-4px);
+
+
+  box-shadow:
+
+  0 12px 25px rgba(23,74,58,.35);
+
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+  .volunteer-card{
+
+
+      padding:25px;
+
+
+      border-radius:20px;
+
+
+  }
+
+
+
+  .volunteer-title{
+
+
+      font-size:24px;
+
+
+  }
+
+
+}
+
+/* Volunteer Table Styling */
+
+
+.volunteer-card table {
+
+  margin-top:20px;
+
+}
+
+
+
+.volunteer-card thead {
+
+
+  background:#174A3A;
+
+  color:white;
+
+
+}
+
+
+
+.volunteer-card th {
+
+
+  padding:15px;
+
+  font-size:14px;
+
+  letter-spacing:.5px;
+
+
+}
+
+
+
+.volunteer-card td {
+
+
+  padding:14px;
+
+  color:#39483f;
+
+  font-size:14px;
+
+
+}
+
+
+
+.volunteer-card tbody tr {
+
+
+  transition:.3s;
+
+
+}
+
+
+
+.volunteer-card tbody tr:hover {
+
+
+  background:#f5f8f2;
+
+
+  transform:scale(1.005);
+
+
+}
+
+
+
+.badge {
+
+
+  padding:8px 12px;
+
+  border-radius:20px;
+
+  font-size:12px;
+
+}

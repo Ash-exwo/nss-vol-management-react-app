@@ -1,11 +1,15 @@
-import './index.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import AddVolunteer from "./components/AddVolunteer"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
+    <BrowserRouter>
+    <Routes>
+      <Route path="/add-volunteer" element={<AddVolunteer/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
